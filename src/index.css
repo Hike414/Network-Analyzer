@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-900 bg-gray-50;
+  }
+}
+
+@layer components {
+  .anomaly-card {
+    @apply transition-all duration-200 hover:shadow-md;
+  }
+}
+
+@layer utilities {
+  .prose-custom {
+    @apply prose-headings:text-gray-900 prose-p:text-gray-600 prose-strong:text-gray-900;
+  }
+}
